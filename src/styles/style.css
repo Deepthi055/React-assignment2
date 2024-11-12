@@ -1,0 +1,1237 @@
+/* style.css */
+
+/* Header Styles */
+.h1 {
+  text-align: center;
+  color: pink;
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding-inline: none;
+}
+
+.navi li {
+  display: inline;
+  padding: 1px;
+}
+
+.navi {
+  background-color: rgb(80, 8, 25);
+}
+
+.navi a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+/* Search Bar Styling */
+.searchtab {
+  text-align: 0px 0px 20px;
+  text-align: right;
+  color: #aaa;
+}
+
+.span {
+  color: black;
+  box-align: box;
+}
+
+/* Navbar Styling */
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 20px 20px;
+  display: block;
+}
+
+.navbar ul li a:hover {
+  background-color: #575757;
+}
+
+/* Other Styles ... */
+/* Reset and Global Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f7f7f7;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  font-weight: bold;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Header Styles */
+header {
+  background-color: #f4a261;  /* Light orange */
+  padding: 15px 30px;
+  text-align: center;
+}
+
+.nav-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links li {
+  display: inline;
+  margin: 0 15px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: #fff5e6;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 70px 20px;
+  background-color: #2a9d8f;  /* Teal */
+  color: white;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-top: 0;
+  line-height: 1.6;
+}
+
+/* Search Bar */
+/* Search Bar */
+.search-container {
+  position: relative;
+  width: 200px; /* Set to a smaller width */
+  margin: 20px auto;  /* Centers the search bar horizontally */
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 8px; /* Adjust padding to suit smaller size */
+  padding-left: 30px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  outline: none;
+}
+
+.search-container i {
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #aaa;
+}
+
+
+/* Cake Product Cards */
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.product-card {
+  background-color: white;
+  width: 250px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.05);  /* Slight zoom effect on hover */
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.product-card h3 {
+  font-size: 22px;
+  margin: 15px 0;
+}
+
+.product-card p {
+  font-size: 16px;
+  color: #555;
+}
+
+.product-card .price {
+  font-size: 18px;
+  color: #f4a261;  /* Light orange for price */
+  font-weight: bold;
+}
+
+/* Slider Section */
+.slider {
+  padding: 40px 0;
+  background-color: #fefae0;  /* Light yellow */
+  text-align: center;
+}
+
+.slider h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.slider-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  overflow-x: hidden;
+  animation: slide-horizontal 15s linear infinite;
+}
+
+.image-container {
+  width: 250px;
+  text-align: center;
+}
+
+.circular-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ccc;
+}
+
+/* Keyframe Animation for Slider */
+@keyframes slide-horizontal {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Footer */
+footer {
+  background-color: #f4a261;  /* Light orange */
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+footer p {
+  margin: 0;
+  font-size: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .product-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search-container {
+    width: 100%;
+  }
+
+  .slider-container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 24px;
+  }
+
+  .product-card {
+    width: 90%;
+  }
+}
+/* General Reset and Body Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f7f7f7;
+}
+
+/* Header and Navigation */
+header {
+  background-color: #f4a261; /* Light orange */
+  padding: 15px 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #fff5e6;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 70px 20px;
+  background-color: #2a9d8f; /* Teal */
+  color: white;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-top: 0;
+  line-height: 1.6;
+}
+/* Reset and Global Styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f7f7f7;
+}
+
+/* Header and Navigation */
+header {
+  background-color: #f4a261;  /* Light orange */
+  padding: 15px 30px;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #fff5e6;  /* Slightly lighter on hover */
+}
+
+/* Blinking Effect */
+@keyframes blink-text {
+  50% {
+    opacity: 0;
+  }
+}
+
+.blink {
+  animation: blink-text 1.5s steps(5, start) infinite;
+}
+
+/* Image Container for Circular Display */
+.image-container {
+  width: 150px;
+  text-align: center;
+}
+
+.circular-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ccc;
+}
+
+/* Featured Cakes Section */
+.featured {
+  padding: 40px 0;
+  background-color: #fff;
+  text-align: center;
+}
+
+.featured h2 {
+  font-size: 24px;
+  color: #2a9d8f;
+  margin-bottom: 20px;
+}
+
+.featured-cakes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.cake {
+  width: 200px;
+  text-align: center;
+}
+
+.cake img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 40px;
+  text-align: center;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin: 40px auto;
+  max-width: 800px;
+  border-radius: 10px;
+}
+
+.contact-section h1 {
+  font-size: 36px;
+  color: #2a9d8f;
+  margin-bottom: 20px;
+}
+
+.contact-section p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* Contact Form Styling */
+.contact-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  width: 100%;
+  max-width: 600px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.input-group textarea {
+  resize: none;
+}
+
+.input-group button {
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  background-color: #2a9d8f;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.input-group button:hover {
+  background-color: #21867a;
+}
+
+/* Footer */
+footer {
+  background-color: #264653;  /* Dark teal */
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+footer p {
+  margin: 0;
+  font-size: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .featured-cakes {
+    flex-direction: column;
+  }
+
+  .contact-section {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .featured h2 {
+    font-size: 20px;
+  }
+
+  .contact-section h1 {
+    font-size: 28px;
+  }
+}
+/* src/styles/style.css */
+
+.best-sellers {
+  padding: 20px;
+}
+
+.best-sellers h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.cake-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.cake-item {
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.cake-item h2 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.cake-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.price {
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #999;
+  margin-right: 5px;
+}
+
+.discounted-price {
+  color: #d9534f;
+  font-weight: bold;
+}
+
+.rating {
+  font-size: 14px;
+  color: #ffa500;
+  margin-top: 5px;
+}
+
+.cart {
+  margin-top: 30px;
+  padding: 20px;
+  border-top: 1px solid #ccc;
+}
+
+.cart h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.cart-items {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cart-items li {
+  font-size: 16px;
+}
+
+.checkout {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.checkout:hover {
+  background-color:#d9534f
+}
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+  background-color: #f7f7f7;
+}
+
+h1 {
+  font-size: 28px;
+  color: #d2691e;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Container for Cake Items */
+.cake-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Cake Item Container */
+.cake-item {
+  width: 200px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.cake-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Cake Image */
+.cake-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+/* Cake Title */
+.cake-item h2 {
+  font-size: 18px;
+  color: #333;
+  margin: 10px 0;
+}
+
+/* Price Section */
+.price {
+  font-size: 16px;
+  color: #666;
+  margin-top: 8px;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #999;
+  margin-right: 5px;
+}
+
+.discounted-price {
+  color: #d9534f;
+  font-weight: bold;
+}
+
+.offer {
+  font-size: 14px;
+  color: #28a745;
+  margin-left: 5px;
+}
+
+/* Rating Section */
+.rating {
+  font-size: 14px;
+  color: #ffa500;
+  margin-top: 5px;
+}
+
+/* Cart Section */
+.cart {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cart h3 {
+  font-size: 22px;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.cart-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cart-items li {
+  font-size: 16px;
+  color: #333;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.cart-total {
+  font-size: 18px;
+  font-weight: bold;
+  color: #d9534f;
+  margin-top: 10px;
+  display: block;
+  text-align: center;
+}
+
+.checkout {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #28a745;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.checkout:hover {
+  background-color: #218838;
+}
+/* General Layout and Box Styling */
+#box {
+  background-color: whitesmoke;
+  margin: 0 auto;
+  max-width: 1000px; /* Limits the width for larger screens */
+  padding: 20px;
+  text-align: center; /* Centers text inside the box */
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Title Styling */
+h1 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Layout for Cake Items */
+.cakes {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px; /* Space between each item */
+}
+
+/* Individual Cake Item Styling */
+.cake-item {
+  background-color: white;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 200px; /* Adjust width as needed */
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.cake-item:hover {
+  transform: scale(1.05); /* Zoom effect on hover */
+}
+
+/* Image Styling */
+.cake-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+/* Price Styling */
+.price {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: grey;
+  margin-right: 10px;
+}
+
+.discounted-price {
+  color: green;
+}
+
+.offer {
+  color: red;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+/* Rating Styling */
+.rating {
+  font-size: 20px;
+  color: grey;
+}
+
+.rating .filled {
+  color: gold;
+}
+
+/* Cart Section Styling */
+.cart {
+  margin-top: 30px;
+  padding: 20px;
+  border-top: 1px solid #ddd;
+}
+
+.cart h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.cart-items {
+  list-style-type: none;
+  padding: 0;
+}
+
+.cart-items li {
+  font-size: 1em;
+  padding: 5px 0;
+}
+
+.cart-total {
+  font-weight: bold;
+}
+
+.checkout {
+  background-color: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.checkout:hover {
+  background-color: #ff4a4a;
+}
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+/* Cart Section Styling */
+.cart-section {
+  padding: 20px;
+  max-width: 900px;
+  margin: 20px auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.cart-table th,
+.cart-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.cart-table th {
+  background-color: #f1f1f1;
+  font-weight: bold;
+}
+
+.cart-table img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.cart-table td input[type="number"] {
+  width: 60px;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.cart-summary {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.cart-summary p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.checkout-btn {
+  background-color: #ff6b6b;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.checkout-btn:hover {
+  background-color: #ff3b3b;
+}
+
+.cart-table tr:last-child td {
+  border-bottom: none;
+}
+
+.cart-table tbody tr {
+  background-color: #f9f9f9;
+}
+
+.cart-table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Cart Empty Message */
+.cart-empty-message {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #888;
+  margin-top: 20px;
+}
+
+.cart-empty-message a {
+  color: #ff6b6b;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.cart-empty-message a:hover {
+  text-decoration: underline;
+}
+/* AboutUs.css */
+
+.about-us-section,
+.our-story,
+.mission-vision,
+.our-team {
+    margin: 20px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    font-size: 2em;
+    color: #333;
+}
+
+.team-member {
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    text-align: center;
+}
+
+.team-member img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+.home-page {
+  text-align: center;
+}
+
+.cake-list {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.cake-item {
+  cursor: pointer;
+  margin: 10px;
+}
+
+.cake-item img {
+  border-radius: 8px;
+}
+
+.cake-detail {
+  text-align: center;
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #f39c12;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e67e22;
+}
+/* src/App.css */
+.cake-item {
+  width: 150px;
+  text-align: center;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  margin: 10px;
+}
+
+.cake-item img {
+  width: 100%;
+  height: auto;
+}
+
+button {
+  padding: 10px;
+  background-color: #f39c12;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e67e22;
+}
+
+.cart {
+  margin-top: 30px;
+}
+
+.cart-items {
+  list-style-type: none;
+  padding: 0;
+}
+
+.cart-items li {
+  margin-bottom: 10px;
+}
+
+.checkout {
+  background-color: #27ae60;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.checkout:hover {
+  background-color: #2ecc71;
+}
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cart-table th, .cart-table td {
+  padding: 10px;
+  text-align: left;
+}
+
+.cart-product img {
+  max-width: 80px;
+}
+
+.quantity-input {
+  width: 50px;
+}
+
+.cart-summary {
+  margin-top: 20px;
+}
+
+.cart-summary button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.remove-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.remove-btn:hover {
+  background-color: #c82333;
+}
+
+.checkout {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.checkout:hover {
+  background-color: #0056b3;
+}
+.cake-detail-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.cake-detail-image {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.cake-detail-title {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.cake-detail-price {
+  font-size: 1.5em;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.cake-detail-description {
+  font-size: 1.2em;
+  color: #777;
+  text-align: center;
+}
+
